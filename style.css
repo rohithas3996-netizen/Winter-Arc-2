@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #070716;
+  color: #f5f5ff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.site-header h1 {
+  color: #b9cafe;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(111, 246, 255, 0.4);
+}
+
+.tagline {
+  color: #9fb8ff;
+  font-size: 0.95rem;
+}
+
+/* Intro section */
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro-inner {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #101028;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.45);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6df3ff;
+}
+
+/* Bio */
+.bio {
+  max-width: 420px;
+}
+
+.bio h2 {
+  margin-bottom: 8px;
+  color: #d9e0ff;
+  text-align: center;
+}
+
+.bio p {
+  color: #cfd5ff;
+  text-align: center;
+}
+
+/* Shared styling for section headers */
+.showcase-grid h2,
+.interests h2 {
+  color: #dcdfff;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Showcase section (Grid) */
+.showcase-grid {
+  margin-bottom: 40px;
+}
+
+.showcase-grid .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #11112b;
+  border: 1px solid #7a45ff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #bfc4ff;
+  text-align: center;
+}
+
+/* Interests section (Flexbox) */
+.interests {
+  margin-bottom: 40px;
+}
+
+.interests .interest-cards {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icard {
+  background: #0c0c22;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #6df3ff;
+  font-size: 0.9rem;
+  color: #d1ddff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #cbd1ff;
+}
+
+.site-footer a {
+  color: #6df3ff;
+  text-decoration: none;
+}
+
+.tiny {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 14px;
+  }
+}
