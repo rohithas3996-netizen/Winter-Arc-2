@@ -19,28 +19,25 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+/* HEADER */
 .site-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .site-header h1 {
-  color: #b9cafe;
   font-weight: 600;
+  color: #b9cafe;
   text-shadow: 0 0 8px rgba(111, 246, 255, 0.4);
 }
 
 .tagline {
   color: #9fb8ff;
   font-size: 0.95rem;
+  margin-top: 4px;
 }
 
-/* Intro */
-.intro {
-  margin-bottom: 40px;
-}
-
+/* PROFILE INTRO */
 .intro-inner {
   display: flex;
   gap: 20px;
@@ -51,6 +48,7 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0,0,0,0.45);
+  margin-bottom: 40px;
 }
 
 .profile-img {
@@ -63,40 +61,33 @@ body {
 
 .bio {
   max-width: 420px;
+  text-align: center;
 }
 
 .bio h2 {
   margin-bottom: 8px;
   color: #d9e0ff;
-  text-align: center;
 }
 
-.bio p {
-  color: #cfd5ff;
-  text-align: center;
-}
-
-/* Section headings */
+/* SECTION HEADERS */
 .showcase-grid h2,
-.interests h2 {
-  color: #dcdfff;
-  margin-bottom: 12px;
-  font-weight: 600;
+.interests h2,
+.gallery-section h2 {
+  margin-bottom: 14px;
   text-align: center;
+  font-weight: 600;
+  color: #dcdfff;
 }
 
-/* Showcase / gallery (Grid) */
-.showcase-grid {
-  margin-bottom: 40px;
-}
-
-.showcase-grid .grid-container {
+/* SHOWCASE CARDS (GRID) */
+.showcase-grid .grid-container,
+.gallery-section .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
+  justify-items: center;
 }
 
-/* Card + image styling */
 .card {
   background: #11112b;
   border: 1px solid #7a45ff;
@@ -104,14 +95,15 @@ body {
   padding: 10px 10px 14px;
   text-align: center;
   font-size: 0.9rem;
+  width: 100%;
+  max-width: 360px;
   box-shadow: 0 0 10px rgba(0,0,0,0.35);
 }
 
-/* THIS PART makes your photos fit nicely */
+/* IMPORTANT — keeps images natural and not cropped */
 .card img {
   width: 100%;
-  height: 180px;          /* good for your wide photos */
-  object-fit: cover;      /* crop nicely without stretching */
+  height: auto;
   border-radius: 8px;
   display: block;
   margin-bottom: 8px;
@@ -119,22 +111,14 @@ body {
 
 .card p {
   color: #e2e4ff;
-  font-size: 0.9rem;
 }
 
-.note {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #bfc4ff;
-  text-align: center;
-}
-
-/* Interests (Flexbox) */
+/* INTEREST TAGS */
 .interests {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
-.interests .interest-cards {
+.interest-cards {
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -151,7 +135,7 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
-/* Footer */
+/* FOOTER */
 .site-footer {
   text-align: center;
   margin-top: 50px;
@@ -165,17 +149,13 @@ body {
 
 .tiny {
   font-size: 0.85rem;
-  margin-top: 5px;
   opacity: 0.7;
+  margin-top: 5px;
 }
 
-/* Mobile */
+/* MOBILE TWEAK */
 @media (max-width: 480px) {
   body {
     padding: 14px;
-  }
-
-  .card img {
-    height: 160px;  /* slightly shorter on small screens */
   }
 }
